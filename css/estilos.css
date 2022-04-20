@@ -57,7 +57,26 @@
         text-transform: uppercase;
         color: #FFF;
         text-shadow: 3px 0px 32px rgba(209, 141, 232, 1);
+        animation-name: focus-in-contract;
+        animation-duration: 2.2s;
+        animation-timing-function: ease;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: none;
     }
+
+    @keyframes focus-in-contract {
+        0%{
+          letter-spacing: 1em;
+          filter: blur(12px);
+          opacity: 0;
+        }
+        100%{
+          filter: blur(0);
+          opacity: 1;
+        }
+      }
     main{
         grid-area: main;
         display: flex;
