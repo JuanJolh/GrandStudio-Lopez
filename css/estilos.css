@@ -5,25 +5,16 @@
 
 @media screen and (min-width: 400px) {
     body {
-        font-family: 'Oswald', sans-serif;
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: 120px 40px auto 120px;
-        grid-template-areas: "logo"
-                             "nav"
-                             "main"
-                             "footer";
+        font-family: 'Oswald', sans-serif !important; 
     }
 
     .logo{
         width: auto;
         display: flex;
-        justify-content: center;
-        grid-area: logo;
         padding: 5px;
+        justify-content: center;
     }
     .barra{
-        grid-area: nav;
         display: flex;
         justify-content: center;
         color: #FFF;
@@ -34,8 +25,12 @@
         display: inline-block;
         padding: 10px;
     }
-    .barra lu{
+    .barra li a{
+        color: #521F63;
+    }
+    .barra ul{
         display: inline-block;
+        padding-left: 0px;
     }
     .barra a {
         display: block;
@@ -78,7 +73,6 @@
         }
       }
     main{
-        grid-area: main;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -141,7 +135,6 @@
         width: 100%;
     }
     footer{
-        grid-area: footer;
         background-color: #521F63;
         width: 100%;
         height: 120px;
@@ -156,6 +149,11 @@
         font-size: 5vw;
         color: #FFF;
     }
+    .formulario{
+        padding: 20px;
+        width: 70%;
+    }
+
 
 }
 
@@ -164,22 +162,14 @@
 
     body {
         font-family: 'Oswald', sans-serif;
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: 120px auto 100px;
-        grid-template-areas: "logo nav"
-                            "main main"
-                            "footer footer";
     }
 
     .logo{
-        grid-area: logo;
         width: 20%;
         padding: 5px;
         margin: 5px 50px;
     }
     .barra{
-        grid-area: nav;
         color: #FFF;
         height: 120px;
         list-style: none;
@@ -189,12 +179,12 @@
         display: inline-block;
         padding: 0px;
     }
-    .barra lu{
+    .barra ul{
         display: inline-block;
     }
     .barra a {
         display: block;
-        line-height: 120px;
+        line-height: 148px;
         padding: 0 14px;
         text-decoration: none;
         color: #000000;
@@ -204,9 +194,7 @@
         color: #ffffff;
         background: #521F63;
     }
-    main{
-        grid-area: main;
-    }
+
     .principal{
         background-image: url(../assets/img/header.jpg);
         height: 400px;
@@ -274,10 +262,7 @@
         padding: 10px;
         text-align: justify;
     }
-    form{
-        text-align: center;
-        align-items: center;
-    }
+    
     .portafolio{
         height: 100%;
         width: 100%;
@@ -301,7 +286,6 @@
         padding: 5px;
     }
     footer{
-        grid-area: footer;
         background-color: #521F63;
         width: 100%;
         height: 100px;
