@@ -24,23 +24,45 @@
         <div class="row no-gutter">
 
             <!-- Logo y Nav-->
-            <section class="col-xs-12 col-sm-6 col-md-6">
-                <div class="logo">
-                    <a href="../index.html"><img src="../assets/img/logo.png" alt=""></a>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="../index.html">GrandStudio</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./portafolio.html">Portafolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav d-flex flex-row me-1">
+                            <li class="nav-item me-3 me-lg-0">
+                                <a class="nav-link" href="https://www.whatsapp.com/?lang=es"><i class="fa-brands fa-whatsapp"></i></a>
+                            </li>
+                            <li class="nav-item me-3 me-lg-0">
+                                <a class="nav-link" href="https://twitter.com/home"><i class="fa-brands fa-twitter-square"></i></a>
+                            </li>
+                            <li class="nav-item me-3 me-lg-0">
+                                <a class="nav-link" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                            </li>
+                            <li class="nav-item me-3 me-lg-0">
+                                <a class="nav-link" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </section>
-            <section class="col-xs-12 col-sm-6 col-md-6">
-               <nav class="barra">
-                    <ul>
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="nosotros.html">Nosotros</a></li>
-                        <li><a href="servicios.html">Servicios</a></li>
-                        <li><a href="portafolio.html">Portafolio</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                    </ul>
-                </nav>
-            </section>
-             <!-- Logo y Nav-->
+            </nav>
+            <!-- Logo y Nav-->
 
 
             <!-- Info web -->
@@ -48,51 +70,58 @@
                 <article class="principal">
                     <h1>Acerca de nosotros</h1>
                 </article>
-                <section>
-                    <article class="info">
-                        <img src="../assets/img/nosotros.jpg" class="rounded-circle" alt="">
-                        <div class="texto">
-                            <h2>Sobre Nosotros</h2>
-                            <p>Somos una agencia de diseño web cuya pasión es proporcionar soluciones integrales, desde diseño y desarrollo web, publicidad digital, ecommerce, apps, seo, diseño de marca entre otras </p>
+                <div class="container col-xl-10 col-xxl-8 px-4 py-2">
+                    <div class="row align-items-center g-lg-5 py-5">
+                        <div class="col-lg-7 text-center text-lg-start">
+                            <h3 class="display-4 fw-bold lh-1 mb-3">Sobre Nosotros</h3>
+                            <p>Somos una agencia de diseño web cuya pasión es proporcionar soluciones integrales, desde diseño y desarrollo web, publicidad digital, ecommerce, apps, seo, diseño de marca entre otras.</p>
                         </div>
-                    </article>
-
-                    <div class="tar">
-                    
-                        <div class="caja">
-                            <i class="fa-solid fa-m"></i>
-                            <h2>Nuestra Misión</h2>
-                            <p>Ayudar a nuestros clientes a diseñar, desarrollar y administrar sus proyectos digitales a nivel técnico, funcional y operacional para que den el salto tecnológico que hace falta.</p>
+                        <div class="col-md-10 mx-auto col-lg-5">
+                        <img src="../assets/img/nosotros.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
                         </div>
-
-                        <div class="caja">
-                            <i class="fa-solid fa-v"></i>
-                            <h2>Nuestra Visión</h2>
-                            <p>Atender al ecosistema de negocios en México y en el mundo, ofreciendo un servicio integral y de calidad dentro de la industria online y en la construcción de sitos web.</p>
-                        </div>
-
-                        <div class="caja">
-                            <i class="fa-solid fa-p"></i>
-                            <h2>Nuestro Plan</h2>
-                            <p>Aprovechar todo el potencial de tu negocio para ayudarte a incrementar las ventas online de tu producto o servicio a través de nuestros servicios integrales.</p>
-                        </div>
-                    
+                    </div>
                 </div>
-
-                </section>
+                <div class="container mt-2 mb-5">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 bg-light text-center border py-5 px-3">
+                            <i class="fs-1 mb-3 fa-solid fa-desktop"></i>
+                            <h4 class="mb-3 fw-normal text-uppercase">Misión</h4>
+                            <p class="text-secondary">Brindar soluciones tecnológicas que aporten experiencias únicas y funcionales a la humanidad.</p>
+                        </div>
+                        <div class="col-md-4 col-sm-6 bg-light text-center border py-5 px-3">
+                            <i class="fs-1 mb-3 fa-solid fa-tags"></i>
+                            <h4 class="mb-3 fw-normal text-uppercase">Visión</h4>
+                            <p class="text-secondary">Incorporar al mayor número de empresas a la transformación digital, creando modelos de negocio con base tecnológica, sólidos y escalables.</p>
+                        </div>
+                        <div class="col-md-4 col-sm-6 bg-light text-center border py-5 px-3">
+                            <i class="fs-1 mb-3 fa-solid fa-audio-description"></i>
+                            <h4 class="mb-3 fw-normal text-uppercase">Confianza</h4>
+                            <p class="text-secondary">Creemos que cada cliente es un amigo y como eso, atesoramos sus ideas como si fueran parte de nosotros</p>
+                        </div>
+                        <div class="col-md-4 col-sm-6 bg-light text-center border py-5 px-3">
+                            <i class="fs-1 mb-3 fa-solid fa-g"></i>
+                            <h4 class="mb-3 fw-normal text-uppercase">Inovacion</h4>
+                            <p class="text-secondary">Siempre estamos en constante busqueda de ideas novedosas, que tengan  el potencial de cambiar el mundo</p>
+                        </div>
+                        <div class="col-md-4 col-sm-6 bg-light text-center border py-5 px-3">
+                            <i class="fs-1 mb-3 fa-solid fa-paintbrush"></i>
+                            <h4 class="mb-3 fw-normal text-uppercase">Profesionalismo</h4>
+                            <p class="text-secondary">Nos apasiona lo que hacemos, es por eso que nos comprometemos a entregarte resultados que agreguen valor a tu empresa.</p>
+                        </div>
+                        <div class="col-md-4 col-sm-6 bg-light text-center border py-5 px-3">
+                            <i class="fs-1 mb-3 fa-solid fa-at"></i>
+                            <h4 class="mb-3 fw-normal text-uppercase">Experiencia</h4>
+                            <p class="text-secondary">Tenmos más de 15 años de experiencia en Marketing Digital: especializados en otorgar servicios al sector turístico y comercial.</p>
+                        </div>
+                    </div>
+                </div>
             </main>
             <!-- Info web -->
 
             <!-- Pie -->   
-            <footer class="col-12">
-                <p>© Copyright GrandStudio All Rights Reserved 2022</p>
-                <div class="redes">
-                    <ul>
-                        <li><a href="https://www.whatsapp.com/?lang=es"><i class="fa-brands fa-whatsapp"></i></a></li>
-                        <li><a href="https://twitter.com/home"><i class="fa-brands fa-twitter-square"></i></a></li>
-                        <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>                       
-                        <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
-                    </ul>
+            <footer class="navbar navbar-expand-lg navbar-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="#">Todos los Derechos Reservados</a>
                 </div>
             </footer>
             <!-- Pie -->

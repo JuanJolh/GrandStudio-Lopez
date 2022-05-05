@@ -1,43 +1,26 @@
+/* Variables */
 $colorprincipal: #521F63;
 $colortitulos: #9337B2;
 
+/* Globales */
 *{
     margin: 0;
     padding: 0;
 }
+h1, h2, h3{
+    color: $colortitulos;
+}
+nav, footer{
+    background-color: $colorprincipal;
+}
+i{
+    color: $colorprincipal;
+}
 
+/* Responsive */
 @media screen and (min-width: 400px) {
     body {
         font-family: 'Oswald', sans-serif !important; 
-    }
-    .logo{
-        width: auto;
-        display: flex;
-        padding: 5px;
-        justify-content: center;
-    }
-    .barra{
-        display: flex;
-        justify-content: center;
-        color: #FFF;
-        height: 80px;
-        list-style: none;
-        ul{
-            display: inline-block;
-            padding-left: 0px;
-            li{
-                display: inline-block;
-                padding: 10px;
-                a{
-                    color: #521F63;
-                }
-            }    
-        }
-        a {
-            display: block;
-            text-decoration: none;
-            font-size: 15px;
-        }
     }
     .principal{
         background-image: url(../img/header.jpg);
@@ -78,57 +61,6 @@ $colortitulos: #9337B2;
         align-items: center;
         flex-direction: column;
     }
-    .info{
-        h2{
-            text-align: center;
-            color: #5A3D63
-        }
-        p{
-            line-height: 1.2em;
-            letter-spacing: 2.5px;
-            padding: 10px;
-            text-align: justify;
-        }
-        img{
-            width: 100%;
-            padding-top: 10px;
-        }
-    }
-    .tar{
-        height: auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        align-content: flex-start;
-        width: 100%;
-        overflow: auto;
-        flex-direction: row;
-    }
-    .caja{
-        width: auto;
-        padding: 20px;
-        height: auto;
-        margin: 20px;
-        -webkit-box-shadow: 0px 0px 9px 2px #9337B2;
-        -moz-box-shadow: 0px 0px 9px 2px #9337B2;
-        box-shadow: 0px 0px 9px 2px #9337B2;
-        i{
-            font-size: 70px;
-            position: absolute;
-            margin-top: 10px;
-        }
-        h2{
-            margin-left: 110px;
-            font-size: 24px;
-            color: $colortitulos;
-        }
-        p{
-            margin-left: 110px;
-            font-size: 14px;
-        }
-    }
-
     .portafolio{
         height: 100%;
         width: auto;
@@ -148,55 +80,6 @@ $colortitulos: #9337B2;
             width: 100%;
         }
     }
-    footer{
-        background-color: $colorprincipal;
-        width: 100%;
-        height: 125px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        .redes{
-            color: #FFF;
-            list-style: none;
-            ul{
-                display: inline-block;
-                padding-left: 0px;
-                li{
-                    display: inline-block;
-                    padding: 0px;
-                    a{
-                        background-color: #414141;
-                        color: #FFF;
-                        line-height: 1;
-                        width: 36px;
-                        height: 36px;
-                        font-size: 18px;
-                        display: inline-block;
-                        margin: 2px;
-                        padding: 8px 0;
-                        margin-right: 4px;
-                        border-radius: 4px;
-                        text-align: center;
-                        &:hover {
-                            background-color: #FFF;
-                            color: #D18DE8;
-                            -webkit-transition: background 0.5s 0s linear;
-                            -moz-transition: background 0.5s 0s linear;
-                            -o-transition: background 0.5s 0s linear;
-                            transition: background 0.5s 0s linear;
-                        }
-                    }
-                }
-            }
-
-        }
-        p{
-            margin-top: 20px;
-            font-size: 4vw;
-            color: #FFF;
-        }
-    }
     .formulario{
         padding: 20px;
         width: 70%;
@@ -205,7 +88,6 @@ $colortitulos: #9337B2;
         margin-right: 0;
         margin-left: 0;
     }
-      
     .no-gutter > [class*="col-"] {
         padding-right: 0;
         padding-left: 0;
@@ -213,37 +95,6 @@ $colortitulos: #9337B2;
 
 }
 @media (min-width: 768px) {
-    .logo{
-        width: 20%;
-        padding: 5px;
-        margin: 5px 50px;
-    }
-    .barra{
-        color: #FFF;
-        height: 120px;
-        list-style: none;
-        justify-content: center;
-        ul{
-            display: inline-block;
-            li{
-                display: inline-block;
-                padding: 0px;
-                a{
-                    display: block;
-                    line-height: 148px;
-                    padding: 0 14px;
-                    text-decoration: none;
-                    color: #000000;
-                    font-size: 20px;
-                    &:hover {
-                        color: #ffffff;
-                        background: $colorprincipal;
-                    }
-                }
-                
-            }
-        }
-    }
     .principal{
         height: 400px;
         h1{
@@ -252,32 +103,6 @@ $colortitulos: #9337B2;
             text-transform: uppercase;
             color: #FFF;
             text-shadow: 3px 0px 32px rgba(209, 141, 232, 1);
-        }
-    }
-    .info{
-        background-color: white;
-        padding: 20px;
-        height: 500px;
-        background-size: cover;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        img{
-            width: 90%;
-            padding: 5px;
-            margin: 0 20px;
-        }
-        h2{
-            font-size: 2vw;
-            text-align: center;
-            color: $colortitulos;
-        }
-        p{
-            font-size: 1vw;
-            line-height: 1.2em;
-            letter-spacing: 2.5px;
-            padding: 10px;
-            text-align: justify;
         }
     }
     .caja{
@@ -306,24 +131,10 @@ $colortitulos: #9337B2;
             padding: 5px;
         }
     }
-    footer{
-        background-color: $colorprincipal;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-around;
-        p{
-            font-size: 1.5vw;
-            color: #FFF;
-        }
-    }
     .no-gutter {
         margin-right: 0;
         margin-left: 0;
-    }
-      
+    }      
     .no-gutter > [class*="col-"] {
         padding-right: 0;
         padding-left: 0;
