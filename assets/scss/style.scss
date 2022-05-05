@@ -61,25 +61,6 @@ i{
         align-items: center;
         flex-direction: column;
     }
-    .portafolio{
-        height: 100%;
-        width: auto;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin-bottom: 10px;
-    }
-    .port{
-        width: 100%; 
-        h3{
-            text-align: center;
-            color: $colortitulos;
-        }
-        img{
-            width: 100%;
-        }
-    }
     .formulario{
         padding: 20px;
         width: 70%;
@@ -92,7 +73,6 @@ i{
         padding-right: 0;
         padding-left: 0;
     }
-
 }
 @media (min-width: 768px) {
     .principal{
@@ -104,10 +84,6 @@ i{
             color: #FFF;
             text-shadow: 3px 0px 32px rgba(209, 141, 232, 1);
         }
-    }
-    .caja{
-        width: 30%;
-        height: 150px;
     }
     .portafolio{
         height: 100%;
@@ -129,6 +105,8 @@ i{
         img{
             width: 100%;
             padding: 5px;
+            -moz-border-radius: 15px 15px 15px 15px;
+            -webkit-border-radius: 15px 15px 15px 15px;
         }
     }
     .no-gutter {
