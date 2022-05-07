@@ -1,20 +1,25 @@
-/* Variables */
-$colorprincipal: #521F63;
-$colortitulos: #9337B2;
+@import "_variables";
+@import "_mixin";
 
 /* Globales */
 *{
     margin: 0;
     padding: 0;
 }
-h1, h2, h3{
-    color: $colortitulos;
-}
 nav, footer{
     background-color: $colorprincipal;
 }
 i{
     color: $colorprincipal;
+}
+
+/* Extended */
+.titulos{
+    color: $colortitulos;
+}
+.titulos--centrado{
+    @extend .titulos;
+    text-align: center;
 }
 
 /* Responsive */
@@ -24,24 +29,22 @@ i{
     }
     .principal{
         background-image: url(../img/header.jpg);
-        height: 150px;
-        width: 100%;
+        @include sizes(100%, 200px);
         background-size: cover;
         display: flex;
         justify-content: center;
         align-items: center;
         h1{
-            text-align: center;
-            font-size: 5vw;
             text-transform: uppercase;
+            text-align: center;
             color: #FFF;
             text-shadow: 3px 0px 32px rgba(209, 141, 232, 1);
-            animation-name: focus-in-contract;
-            animation-duration: 2.2s;
-            animation-timing-function: ease;
-            animation-delay: 0s;
-            animation-iteration-count: 1;
-            animation-direction: normal;
+            animation-name: map-get($animation, name );
+            animation-duration: map-get($animation, duracion );
+            animation-timing-function: map-get($animation, time );
+            animation-delay: map-get($animation, delay );
+            animation-iteration-count: map-get($animation, itera );
+            animation-direction: map-get($animation, direc );
             @keyframes focus-in-contract {
                 0%{
                   letter-spacing: 1em;
@@ -52,7 +55,7 @@ i{
                   filter: blur(0);
                   opacity: 1;
                 }
-              }
+            }
         }
     }
     main{
@@ -64,6 +67,26 @@ i{
     .formulario{
         padding: 20px;
         width: 70%;
+    }
+    .portafolio{
+        @include sizes(100%, 100%);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px 0;
+    }
+    .port{
+        width: 90%;    
+        h4{
+            padding: 10px;
+        }
+        img{
+            width: 100%;
+            padding: 5px;
+            -moz-border-radius: 15px 15px 15px 15px;
+            -webkit-border-radius: 15px 15px 15px 15px;
+        }
     }
     .no-gutter {
         margin-right: 0;
@@ -78,43 +101,10 @@ i{
     .principal{
         height: 400px;
         h1{
-            text-align: center;
             font-size: 4vw;
-            text-transform: uppercase;
-            color: #FFF;
-            text-shadow: 3px 0px 32px rgba(209, 141, 232, 1);
         }
-    }
-    .portafolio{
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin-bottom: 10px;
     }
     .port{
         width: 30%;    
-        h3{
-            font-size: 1vw;
-            color: $colortitulos;
-            text-align: center;
-            padding: 10px;
-        }
-        img{
-            width: 100%;
-            padding: 5px;
-            -moz-border-radius: 15px 15px 15px 15px;
-            -webkit-border-radius: 15px 15px 15px 15px;
-        }
-    }
-    .no-gutter {
-        margin-right: 0;
-        margin-left: 0;
-    }      
-    .no-gutter > [class*="col-"] {
-        padding-right: 0;
-        padding-left: 0;
     }
 }

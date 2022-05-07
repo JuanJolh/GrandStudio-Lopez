@@ -1,12 +1,7 @@
-/* Variables */
 /* Globales */
 * {
   margin: 0;
   padding: 0;
-}
-
-h1, h2, h3 {
-  color: #9337B2;
 }
 
 nav, footer {
@@ -17,6 +12,15 @@ i {
   color: #521F63;
 }
 
+/* Extended */
+.titulos, .titulos--centrado {
+  color: #9337B2;
+}
+
+.titulos--centrado {
+  text-align: center;
+}
+
 /* Responsive */
 @media screen and (min-width: 300px) {
   body {
@@ -24,7 +28,7 @@ i {
   }
   .principal {
     background-image: url(../img/header.jpg);
-    height: 150px;
+    height: 200px;
     width: 100%;
     background-size: cover;
     display: flex;
@@ -32,9 +36,8 @@ i {
     align-items: center;
   }
   .principal h1 {
-    text-align: center;
-    font-size: 5vw;
     text-transform: uppercase;
+    text-align: center;
     color: #FFF;
     text-shadow: 3px 0px 32px #d18de8;
     animation-name: focus-in-contract;
@@ -65,27 +68,6 @@ i {
     padding: 20px;
     width: 70%;
   }
-  .no-gutter {
-    margin-right: 0;
-    margin-left: 0;
-  }
-  .no-gutter > [class*="col-"] {
-    padding-right: 0;
-    padding-left: 0;
-  }
-}
-
-@media (min-width: 768px) {
-  .principal {
-    height: 400px;
-  }
-  .principal h1 {
-    text-align: center;
-    font-size: 4vw;
-    text-transform: uppercase;
-    color: #FFF;
-    text-shadow: 3px 0px 32px #d18de8;
-  }
   .portafolio {
     height: 100%;
     width: 100%;
@@ -93,15 +75,12 @@ i {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: 10px;
+    padding: 20px 0;
   }
   .port {
-    width: 30%;
+    width: 90%;
   }
-  .port h3 {
-    font-size: 1vw;
-    color: #9337B2;
-    text-align: center;
+  .port h4 {
     padding: 10px;
   }
   .port img {
@@ -117,6 +96,18 @@ i {
   .no-gutter > [class*="col-"] {
     padding-right: 0;
     padding-left: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .principal {
+    height: 400px;
+  }
+  .principal h1 {
+    font-size: 4vw;
+  }
+  .port {
+    width: 30%;
   }
 }
 /*# sourceMappingURL=style.css.map */
